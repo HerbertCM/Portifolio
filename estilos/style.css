@@ -1,0 +1,280 @@
+@charset "UTF-8";
+
+:root{
+    --cor0: #DBE102;
+    --cor1: #027DE0;
+    --cor2: #E00A02;
+    --cor3: #888B30;
+    --cor4: #613331;
+    --cor5: #314C61;
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    background-color: black;
+    color: white;
+    width: 100vw;
+    height: 100vh;
+}
+
+header{
+    background-image: linear-gradient(to top, yellow, var(--cor0), rgb(255, 255, 255));
+    box-shadow: 0px 5px 5px yellow;
+    position: relative;
+    height: 250px;
+}
+
+header > h1{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+section#primeiro, section#segundo{
+    position: relative;
+    border: 1px solid white;
+    height: 600px;
+}
+
+/*Primeiro*/
+
+section#primeiro article{
+    position: absolute;
+    border: 1px solid white;
+    display: inline-block;
+    height: 350px;
+    width: 300px;
+    left: 400px;
+    top: 50%;
+    transform: translate(0%, -50%);
+    text-align: center;
+}
+
+section#primeiro h1, section#segundo h1{
+    margin: 35px;
+    font-size: 30px;
+}
+
+section#primeiro p, section#segundo p{
+    margin: 50px 20px;
+    font-size: 18px;
+}
+
+section#primeiro img#img1{
+    position: absolute;
+    background-color: white;
+    width: 300px;
+    height: 400px;
+    left: 100px;
+    top: 50%;
+    transform: translate(0%, -50%);
+}
+
+section#primeiro img#img2{
+    position: absolute;
+    background-color: white;
+    width: 300px;
+    height: 300px;
+    left: 1000px;
+    top: 50%;
+    transform: translate(0, -50%);
+}
+
+/*Segundo*/
+
+section#segundo article{
+    position: absolute;
+    border: 1px solid white;
+    display: inline-block;
+    height: 350px;
+    width: 300px;
+    left: 698px;
+    top: 50%;
+    transform: translate(0%, -50%);
+    text-align: center;
+}
+
+section#segundo img#img1{
+    position: absolute;
+    background-color: white;
+    width: 300px;
+    height: 400px;
+    left: 1000px;
+    top: 50%;
+    transform: translate(0%, -50%);
+}
+
+section#segundo img#img2{
+    position: absolute;
+    background-color: white;
+    width: 300px;
+    height: 300px;
+    left: 100px;
+    top: 50%;
+    transform: translate(0, -50%);
+}
+
+
+/*Instagram*/
+
+section#instagram{
+    position: relative;
+    border: 1px solid white;
+    height: 400px;
+}
+
+section#instagram article{
+    position: absolute;
+    background-color: white;
+    color: black;
+    height: 300px;
+    width: 300px;
+    border-radius: 50%;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+section#instagram div#terra{
+    position: absolute;
+    background-color: green;
+    border-radius: 50%;
+    padding: 40px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+section#instagram h1{
+    text-align: center;
+    font-size: 25px;
+    margin: 5px;
+}
+
+section#instagram p{
+    text-align: center;
+    font-size: 18px;
+}
+
+section#instagram div#lua{
+    position: absolute;
+    background-color: white;
+    border-radius: 50%;
+    width: 70px;
+    height: 70px;
+    top: 1%;
+    left: 70%;
+}
+
+section#instagram a{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/*Habilidades*/
+
+section#habilidades{
+    position: relative;
+    border: 1px solid white;
+    height: 400px;
+    color: black;
+}
+
+section#habilidades article{
+    display: inline-block;
+    position: absolute;
+    width: 200px;
+    height: 150px;
+    top: 50%;
+    left: 100px;
+    transform: translate(0%, -50%);
+    text-align: center;
+}
+
+section#habilidades article#dois{
+    left: 350px;
+    border-left: 2px solid black;
+}
+
+section#habilidades article#tres{
+    left: 980px;
+}
+section#habilidades article#quatro{
+    left: 1230px;
+    border-left: 2px solid black;
+}
+
+section#habilidades h1{
+    font-size: 25px;
+    padding-bottom: 16px;
+    padding-top: 10px;
+}
+
+section#habilidades p{
+    font-size: 16px;
+    padding-top: 15px;
+}
+
+section#habilidades div#menu{
+    position: absolute;
+    background-color: green;
+    width: 100%;
+    height: 200px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+section#habilidades div#marte{
+    position: absolute;
+    display: inline-block;
+    background-color: red;
+    border-radius: 50%;
+    height: 250px;
+    width: 250px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/*links*/
+
+section#sites {
+    position: relative;
+    border: 1px solid white;
+    height: 700px;
+    color: black;
+}
+
+section#sites div#jupter{
+    position: absolute;
+    background-color: white;
+    border-radius: 50%;
+    width: 400px;
+    height: 400px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+section#sites article{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: green;
+    border-radius: 50%;
+    text-align: center;
+}
+
+section#sites h1{
+    
+}
