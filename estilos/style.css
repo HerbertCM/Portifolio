@@ -54,6 +54,7 @@ section#primeiro article{
     top: 50%;
     transform: translate(0%, -50%);
     text-align: center;
+    box-shadow: 0px 0px 5px white;
 }
 
 section#primeiro h1, section#segundo h1{
@@ -74,15 +75,17 @@ section#primeiro img#img1{
     left: 100px;
     top: 50%;
     transform: translate(0%, -50%);
+    border-radius: 20px;
+    box-shadow: 0px 0px 5px white;
+    border: 1px solid white;
 }
 
 section#primeiro img#img2{
     position: absolute;
-    background-color: white;
+    left: 980px;
+    top: 50%;
     width: 300px;
     height: 300px;
-    left: 1000px;
-    top: 50%;
     transform: translate(0, -50%);
 }
 
@@ -98,6 +101,7 @@ section#segundo article{
     top: 50%;
     transform: translate(0%, -50%);
     text-align: center;
+    box-shadow: 0px 0px 5px white;
 }
 
 section#segundo img#img1{
@@ -108,14 +112,16 @@ section#segundo img#img1{
     left: 1000px;
     top: 50%;
     transform: translate(0%, -50%);
+    border-radius: 20px;
+    box-shadow: 0px 0px 5px white;
+    border: 1px solid white;
 }
 
 section#segundo img#img2{
     position: absolute;
-    background-color: white;
     width: 300px;
     height: 300px;
-    left: 100px;
+    left: 180px;
     top: 50%;
     transform: translate(0, -50%);
 }
@@ -131,7 +137,6 @@ section#instagram{
 
 section#instagram article{
     position: absolute;
-    background-color: white;
     color: black;
     height: 300px;
     width: 300px;
@@ -139,6 +144,8 @@ section#instagram article{
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
+    background: url(../imagens/terra-300.png) center center no-repeat fixed;
+    box-shadow: 0px 0px 10px var(--cor1);
 }
 
 section#instagram div#terra{
@@ -164,12 +171,13 @@ section#instagram p{
 
 section#instagram div#lua{
     position: absolute;
-    background-color: white;
     border-radius: 50%;
     width: 70px;
     height: 70px;
     top: 1%;
     left: 70%;
+    background: url(../imagens/lua-terra-70.png) center center no-repeat;
+    box-shadow: 0px 0px 5px rgba(255, 255, 255, 0.414);
 }
 
 section#instagram a{
@@ -236,13 +244,14 @@ section#habilidades div#menu{
 section#habilidades div#marte{
     position: absolute;
     display: inline-block;
-    background-color: red;
     border-radius: 50%;
     height: 250px;
     width: 250px;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    background: url(../imagens/marte-250.png) center center no-repeat fixed;
+    box-shadow: 0px 0px 10px var(--cor2);
 }
 
 /*links*/
@@ -263,6 +272,9 @@ section#sites div#jupter{
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    background: url(../imagens/jupiter-400.png) center center no-repeat fixed;
+    background-size: cover;
+    box-shadow: 0px 0px 10px rgba(255, 102, 0, 0.455);
 }
 
 section#sites article{
@@ -273,8 +285,66 @@ section#sites article{
     background-color: green;
     border-radius: 50%;
     text-align: center;
+    width: 100px;
+    height: 100px;
 }
 
 section#sites h1{
-    
+    padding-top: 20px;
+}
+
+section#sites div#lua1{
+    position: absolute;
+    background-color: white;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    top: 10%;
+    left: 25%;
+}
+
+section#sites div#lua2{
+    position: absolute;
+    background-color: white;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    bottom: 10%;
+    left: 25%;
+}
+
+section#sites div#lua3{
+    position: absolute;
+    background-color: white;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    top: 10%;
+    right: 25%;
+}
+
+section#sites div#lua4{
+    position: absolute;
+    background-color: white;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    bottom: 10%;
+    right: 25%;
+}
+
+section#sites a{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/*Fim*/
+
+footer{
+    background-color: brown;
+    color: white;
+    text-align: center;
+    padding: 5px;
 }
