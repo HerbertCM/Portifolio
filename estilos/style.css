@@ -16,17 +16,20 @@
 }
 
 body{
-    background-color: black;
     color: white;
     width: 100vw;
     height: 100vh;
+    background: black url(../imagens/fundo-estrela.jpg) top center repeat scroll;
+    background-size: cover;
 }
 
 header{
     background-image: linear-gradient(to top, yellow, var(--cor0), rgb(255, 255, 255));
-    box-shadow: 0px 5px 5px yellow;
+    box-shadow: 0px 5px 10px #E14B01;
     position: relative;
     height: 250px;
+    background: url(../imagens/fundo-sol-250.png) top center no-repeat fixed;
+    background-size: cover;
 }
 
 header > h1{
@@ -38,7 +41,6 @@ header > h1{
 
 section#primeiro, section#segundo{
     position: relative;
-    border: 1px solid white;
     height: 600px;
 }
 
@@ -82,9 +84,8 @@ section#primeiro img#img1{
 
 section#primeiro img#img2{
     position: absolute;
-    left: 980px;
+    right: 20vw;
     top: 50%;
-    width: 300px;
     height: 300px;
     transform: translate(0, -50%);
 }
@@ -97,7 +98,7 @@ section#segundo article{
     display: inline-block;
     height: 350px;
     width: 300px;
-    left: 698px;
+    right: 537px;
     top: 50%;
     transform: translate(0%, -50%);
     text-align: center;
@@ -109,7 +110,7 @@ section#segundo img#img1{
     background-color: white;
     width: 300px;
     height: 400px;
-    left: 1000px;
+    right: 235px;
     top: 50%;
     transform: translate(0%, -50%);
     border-radius: 20px;
@@ -119,9 +120,8 @@ section#segundo img#img1{
 
 section#segundo img#img2{
     position: absolute;
-    width: 300px;
     height: 300px;
-    left: 180px;
+    left: 15vw;
     top: 50%;
     transform: translate(0, -50%);
 }
@@ -131,7 +131,6 @@ section#segundo img#img2{
 
 section#instagram{
     position: relative;
-    border: 1px solid white;
     height: 400px;
 }
 
@@ -150,9 +149,10 @@ section#instagram article{
 
 section#instagram div#terra{
     position: absolute;
-    background-color: green;
+    background-color: rgba(0, 0, 0, 0.475);
+    color: white;
     border-radius: 50%;
-    padding: 40px;
+    padding: 30px;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -160,13 +160,25 @@ section#instagram div#terra{
 
 section#instagram h1{
     text-align: center;
-    font-size: 25px;
+    padding-bottom: 10px;
+    font-size: 30px;
     margin: 5px;
 }
 
 section#instagram p{
     text-align: center;
-    font-size: 18px;
+    font-size: 15px;
+    line-height: 20px;
+}
+
+section#instagram a{
+    text-decoration: none;
+    font-weight: bold;
+    color: white
+}
+
+section#instagram a:hover{
+    color: blue;
 }
 
 section#instagram div#lua{
@@ -180,18 +192,22 @@ section#instagram div#lua{
     box-shadow: 0px 0px 5px rgba(255, 255, 255, 0.414);
 }
 
-section#instagram a{
+section#instagram img{
     position: absolute;
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
 }
 
+section#instagram div#lua:hover{
+    box-shadow: 0px 0px 10px white;
+    transition: box-shadow .3s;
+}
+
 /*Habilidades*/
 
 section#habilidades{
     position: relative;
-    border: 1px solid white;
     height: 400px;
     color: black;
 }
@@ -202,21 +218,24 @@ section#habilidades article{
     width: 200px;
     height: 150px;
     top: 50%;
-    left: 100px;
     transform: translate(0%, -50%);
     text-align: center;
 }
 
+section#habilidades article#um{
+    left: 6vw;
+}
+
 section#habilidades article#dois{
-    left: 350px;
+    left: 23vw;
     border-left: 2px solid black;
 }
 
 section#habilidades article#tres{
-    left: 980px;
+    right: 23vw;
 }
 section#habilidades article#quatro{
-    left: 1230px;
+    right: 6vw;
     border-left: 2px solid black;
 }
 
@@ -233,12 +252,15 @@ section#habilidades p{
 
 section#habilidades div#menu{
     position: absolute;
-    background-color: green;
     width: 100%;
     height: 200px;
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
+    background: url(../imagens/solo-marte.jpg) top center no-repeat fixed;
+    background-size: cover;
+    border: 3px solid #AB6B42;
+    box-shadow: 0px 0px 5px #BC5D1E;
 }
 
 section#habilidades div#marte{
@@ -251,14 +273,13 @@ section#habilidades div#marte{
     left: 50%;
     transform: translate(-50%, -50%);
     background: url(../imagens/marte-250.png) center center no-repeat fixed;
-    box-shadow: 0px 0px 10px var(--cor2);
+    box-shadow: 0px 0px 10px #AB6B42;
 }
 
 /*links*/
 
 section#sites {
     position: relative;
-    border: 1px solid white;
     height: 700px;
     color: black;
 }
@@ -277,16 +298,18 @@ section#sites div#jupter{
     box-shadow: 0px 0px 10px rgba(255, 102, 0, 0.455);
 }
 
-section#sites article{
+section#sites iframe{
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background-color: green;
-    border-radius: 50%;
     text-align: center;
-    width: 100px;
-    height: 100px;
+    width: 220px;
+    height: 170px;
+    border-radius: 10px;
+    padding: 2px;
+    background: black;
+    box-shadow: 0px 0px 5px white;
 }
 
 section#sites h1{
@@ -301,6 +324,8 @@ section#sites div#lua1{
     height: 100px;
     top: 10%;
     left: 25%;
+    background: url(../imagens/lua-jupter-100.png) center center no-repeat;
+    box-shadow: 0px 0px 5px #9A7C56;
 }
 
 section#sites div#lua2{
@@ -311,6 +336,8 @@ section#sites div#lua2{
     height: 100px;
     bottom: 10%;
     left: 25%;
+    background: url(../imagens/lua-jupter-100.png) center center no-repeat;
+    box-shadow: 0px 0px 5px #9A7C56;
 }
 
 section#sites div#lua3{
@@ -321,6 +348,8 @@ section#sites div#lua3{
     height: 100px;
     top: 10%;
     right: 25%;
+    background: url(../imagens/lua-jupter-100.png) center center no-repeat;
+    box-shadow: 0px 0px 5px #9A7C56;
 }
 
 section#sites div#lua4{
@@ -331,6 +360,8 @@ section#sites div#lua4{
     height: 100px;
     bottom: 10%;
     right: 25%;
+    background: url(../imagens/lua-jupter-100.png) center center no-repeat;
+    box-shadow: 0px 0px 5px #9A7C56;
 }
 
 section#sites a{
@@ -338,13 +369,25 @@ section#sites a{
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    text-decoration: none;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.475);
+    border-radius: 50%;
+    padding: 10px;
+}
+
+section#sites a:hover{
+    font-weight: bold;
+    box-shadow: 0px 0px 10px white;
+    transition: box-shadow .3s;
 }
 
 /*Fim*/
 
 footer{
-    background-color: brown;
+    background-color: black;
     color: white;
     text-align: center;
     padding: 5px;
+    box-shadow: 0px 0px 5px rgba(255, 255, 255, 0.54);
 }
