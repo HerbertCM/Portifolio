@@ -1,4 +1,11 @@
 @charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@font-face{
+    font-family: 'Space';
+    src: url(../fonts/SPACE.ttf) format(truetype);
+    font-weight: normal;
+    font-style: normal;
+}
 
 :root{
     --cor0: #DBE102;
@@ -12,7 +19,7 @@
 *{
     margin: 0px;
     padding: 0px;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Space Mono', sans-serif;
 }
 
 body{
@@ -37,11 +44,19 @@ header > h1{
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    font-size: 40px;
+    background-color: rgba(0, 0, 0, 0.436);
+    padding: 40px;
+    border-radius: 50%;
 }
 
 section#primeiro, section#segundo{
     position: relative;
     height: 600px;
+}
+
+h1{
+    font-family: 'Space', sans-serif;
 }
 
 /*Primeiro*/
@@ -57,16 +72,18 @@ section#primeiro article{
     transform: translate(0%, -50%);
     text-align: center;
     box-shadow: 0px 0px 5px white;
+    background-color: black;
 }
 
 section#primeiro h1, section#segundo h1{
-    margin: 35px;
-    font-size: 30px;
+    margin: 15px;
+    font-size: 25px;
 }
 
 section#primeiro p, section#segundo p{
-    margin: 50px 20px;
-    font-size: 18px;
+    margin: 0px 20px;
+    font-size: 16px;
+    line-height: 20px;
 }
 
 section#primeiro img#img1{
@@ -103,6 +120,7 @@ section#segundo article{
     transform: translate(0%, -50%);
     text-align: center;
     box-shadow: 0px 0px 5px white;
+    background-color: black;
 }
 
 section#segundo img#img1{
@@ -161,13 +179,13 @@ section#instagram div#terra{
 section#instagram h1{
     text-align: center;
     padding-bottom: 10px;
-    font-size: 30px;
+    font-size: 25px;
     margin: 5px;
 }
 
 section#instagram p{
     text-align: center;
-    font-size: 15px;
+    font-size: 12px;
     line-height: 20px;
 }
 
@@ -216,10 +234,13 @@ section#habilidades article{
     display: inline-block;
     position: absolute;
     width: 200px;
-    height: 150px;
+    height: 100%;
     top: 50%;
     transform: translate(0%, -50%);
     text-align: center;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.532);
+    border: 1px solid #AB6B42;
 }
 
 section#habilidades article#um{
@@ -228,7 +249,6 @@ section#habilidades article#um{
 
 section#habilidades article#dois{
     left: 23vw;
-    border-left: 2px solid black;
 }
 
 section#habilidades article#tres{
@@ -236,18 +256,18 @@ section#habilidades article#tres{
 }
 section#habilidades article#quatro{
     right: 6vw;
-    border-left: 2px solid black;
 }
 
 section#habilidades h1{
-    font-size: 25px;
+    font-size: 26px;
     padding-bottom: 16px;
-    padding-top: 10px;
+    padding-top: 30px;
+    text-decoration: underline;
 }
 
 section#habilidades p{
-    font-size: 16px;
-    padding-top: 15px;
+    font-size: 15px;
+    line-height: 25px;
 }
 
 section#habilidades div#menu{
@@ -274,6 +294,39 @@ section#habilidades div#marte{
     transform: translate(-50%, -50%);
     background: url(../imagens/marte-250.png) center center no-repeat fixed;
     box-shadow: 0px 0px 10px #AB6B42;
+}
+
+/*divisoria*/
+
+section#divisoria{
+    position: relative;
+    height: 250px;
+    margin-top: 150px;
+}
+
+section#divisoria div#titulo{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    margin: auto;
+    width: 660px;
+    height: 150px;
+    text-align: center;
+    border-radius: 50%;
+    background-color: #5a452e36;
+    color: white;
+}
+
+section#divisoria div#titulo h1{
+    padding-bottom: 5px;
+    padding-top: 40px;
+    font-size: 35px;
+}
+
+section#divisoria div#titulo {
+    padding-bottom: 12px;
 }
 
 /*links*/
@@ -304,7 +357,7 @@ section#sites iframe{
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
-    width: 220px;
+    width: 235px;
     height: 170px;
     border-radius: 10px;
     padding: 2px;
@@ -372,8 +425,9 @@ section#sites a{
     text-decoration: none;
     color: white;
     background-color: rgba(0, 0, 0, 0.475);
-    border-radius: 50%;
-    padding: 10px;
+    border-radius: 10px;
+    padding: 5px;
+    font-size: 14px;
 }
 
 section#sites a:hover{
@@ -390,4 +444,5 @@ footer{
     text-align: center;
     padding: 5px;
     box-shadow: 0px 0px 5px rgba(255, 255, 255, 0.54);
+    font-size: 12px;
 }
