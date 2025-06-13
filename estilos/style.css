@@ -581,3 +581,224 @@ footer{
         margin-top: 120px;
     }
 }
+
+
+/*Responsivo 800px*/
+
+@media (max-width: 800px){
+    
+    header > h1{
+        text-align: center;
+        font-size: 20px;
+        width: 250px;
+        padding: 30px;
+    }
+
+    /*Primeiro*/
+
+    section#primeiro article{
+        height: 200px;
+        width: 150px;
+        left: 172px;
+    }
+
+    section#primeiro h1, section#segundo h1{
+        margin: 10px;
+        font-size: 14px;
+    }
+
+    section#primeiro p, section#segundo p{
+        margin: 0px 5px;
+        font-size: 10px;
+        line-height: 11px;
+    }
+
+    section#primeiro img#img1{
+        width: 150px;
+        height: 250px;
+        left: 20px;
+    }
+
+    section#primeiro img#img2{
+        right: 35vw;
+        top: 95%;
+        height: 200px;
+    }
+
+        /*Segundo*/
+
+    section#segundo article{
+        height: 200px;
+        width: 150px;
+        right: 177px;
+    }
+
+    section#segundo img#img1{
+        width: 150px;
+        height: 250px;
+        right: 25px;
+    }
+
+    section#segundo img#img2{
+        height: 200px;
+        left: 35vw;
+        top: 95%;
+        transform: translate(0, -50%);
+    }
+
+    section#segundo p{
+        font-size: 9px;
+        line-height: 12px;
+    }
+
+    /*Instagram*/
+
+    section#instagram{
+        height: 500px;
+    }
+
+    section#instagram article{
+        height: 250px;
+        width: 250px;
+        top: 80%;
+    }
+
+    section#instagram div#terra{
+        padding: 15px;
+    }
+
+    section#instagram h1{
+        padding-bottom: 5px;
+        font-size: 20px;
+    }
+
+    section#instagram p{
+        font-size: 11px;
+        line-height: 15px;
+    }
+
+    section#instagram div#lua{
+    width: 60px;
+    height: 60px;
+    top: 35%;
+    }
+
+    /*Habilidades*/
+
+    section#habilidades{
+        position: relative;
+        height: 400px;
+        color: black;
+    }
+
+    section#habilidades article{
+        width: 50%;
+        height: 50%;
+        top: 0%;
+        transform: translate(0%, 0%);
+    }
+
+    section#habilidades article#um{
+        left: 0vw;
+    }
+
+    section#habilidades article#dois{
+        left: 0vw;
+        top: 50%;
+    }
+
+    section#habilidades article#tres{
+        right: 0vw;
+    }
+
+    section#habilidades article#quatro{
+        right: 0vw;
+        top: 50%;
+    }
+
+    section#habilidades h1{
+        font-size: 15px;
+        padding-bottom: 14px;
+        padding-top: 53px;
+    }
+
+    section#habilidades p{
+        font-size: 13px;
+        line-height: 20px;
+        margin: auto;
+        max-width: 200px;
+    }
+
+    section#habilidades div#menu{
+        width: 100%;
+        height: 100%;
+    }
+
+    section#habilidades div#marte{
+        height: 130px;
+        width: 130px;
+    }
+
+    /*links*/
+
+    section#sites div#jupter{
+    width: 300px;
+    height: 300px;
+    }
+
+    section#sites div#lua1{
+        width: 80px;
+        height: 80px;
+        left: 5%;
+        top: 18%;
+    }
+
+    section#sites div#lua2{
+        width: 80px;
+        height: 80px;
+        left: 5%;
+        bottom: 18%;
+    }
+
+    section#sites div#lua3{
+        width: 80px;
+        height: 80px;
+        top: 18%;
+        right: 6%;
+    }
+
+    section#sites div#lua4{
+        width: 80px;
+        height: 80px;
+        bottom: 18%;
+        right: 6%;
+    }
+
+    /*divisoria*/
+
+    section#divisoria{
+        position: relative;
+        height: 250px;
+        margin-top: 150px;
+    }
+
+    section#divisoria div#titulo{
+        width: 300px;
+        height: 120px;
+        padding-bottom: 0px;
+    }
+
+    section#divisoria div#titulo h1{
+        padding-bottom: 5px;
+        padding-top: 40px;
+        font-size: 17px;
+    }
+
+    section#divisoria p{
+        font-size: .65em;
+    }
+
+    footer{
+    font-size: 9px;
+    }
+}
