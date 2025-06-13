@@ -28,6 +28,7 @@ body{
     height: 100vh;
     background: black url(../imagens/fundo-estrela.jpg) top center repeat scroll;
     background-size: cover;
+    overflow-x: hidden
 }
 
 header{
@@ -800,5 +801,31 @@ footer{
 
     footer{
     font-size: 9px;
+    }
+}
+
+@media (max-width: 800px) and (min-width: 500px){
+    
+    /*Primeiro*/
+
+    section#primeiro, section#segundo{
+        height: 500px;
+    }
+
+    section#primeiro img#img2{
+        right: 10vw;
+        top: 50%;
+    }
+
+        /*Segundo*/
+
+    section#segundo img#img2{
+        left: 10vw;
+        top: 50%;
+    }
+    /*Instagram*/
+
+    section#instagram{
+        height: 400px;
     }
 }
